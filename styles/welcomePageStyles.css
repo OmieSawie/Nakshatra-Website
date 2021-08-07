@@ -4,29 +4,40 @@ body {
 
 .mainLogo {
   display: block;
-  float: center;
-  height: 500px;
-  width: 100%;
-  margin: 0;
+  text-align: center;
+  height: 400px;
+  width: 50%;
+  margin-left: 25%;
   padding: 0;
-  transition: all 0.35s cubic-bezier(0.7, -0.68, 0.35, 1.69);
+  transition: all 0.35s cubic-bezier(0.79, -0.46, 0.35, 1.35);
 }
 
 .mainLogo:hover {
-  width: 50%;
-  margin-left: 25%;
-  transition: all 0.75s cubic-bezier(0.7, -0.68, 0.35, 1.69);
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 50px;
+  transition: all 0.75s cubic-bezier(0.79, -0.46, 0.35, 1.35);
 }
 
 .welcomeMessage {
+  margin-top: 10px;
+  white-space: nowrap;
   color: lightblue;
   text-align: center;
   font-family: monospace;
   font-size: 20px;
   margin-inline: 10%;
   border: 10px solid darkblue;
-  padding-inline: 10%;
+  padding: 0;
   animation: text 1.5s 1s linear backwards;
+}
+
+.welcomeMessage div {
+  color: yellow;
+  animation: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 @keyframes text {
@@ -34,10 +45,10 @@ body {
     color: black;
     border: 0px solid lightblue;
     margin-top: 100px;
-    letter-spacing: 20px;
+    letter-spacing: 10px;
   }
 
   100% {
-    letter-spacing: 100%;
+    letter-spacing: inherit;
   }
 }
