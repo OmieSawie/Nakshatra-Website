@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: black;
 }
@@ -114,7 +119,7 @@ body {
   .mainLogo {
     display: block;
     text-align: center;
-    margin-top: 0px ;
+    margin-top: 0px;
     height: 400px;
     width: 90%;
     margin-left: 5%;
@@ -124,7 +129,7 @@ body {
 
   .welcomeMessage {
     margin-top: 0;
-    white-space: unset ;
+    white-space: unset;
     color: lightblue;
     text-align: center;
     font-family: monospace;
