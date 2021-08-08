@@ -1,24 +1,89 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  background-color: black;
+  color: white;
 }
 
-body {
-    background-color: black;
-  }
-
-#loading{
-    /* position: fixed ; */
-    width: 100% ;
-    height: 100vh ;
-    background-color:  black  ;
-    background-image: url("/images/giphy.gif")  ;
-    background-repeat: no-repeat ;
-    background-position: center  ;
-    background-size: cover ;
-    z-index: 99999 ;
+#loading {
+  /* position: fixed ; */
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-image: url("/images/giphy.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 99999;
 }
 
-p{
-    color: white ;
+li,
+a,
+button {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  border-bottom: 10px blue solid;
+  background-color: black;
+}
+
+.mainLogo {
+  cursor: pointer;
+  height: 50px;
+}
+
+.navLinks {
+  position: absolute;
+  list-style: none;
+  white-space: nowrap;
+  margin-inline: 10%;
+  padding-top: 20px;
+  background-color: black;
+}
+
+.navLinks li {
+  display: inline;
+  padding: 10px;
+  margin-inline: 5px 10%;
+  justify-content: center;
+  background-color: blue;
+  border-radius: 50px;
+}
+
+.navLinks li:hover {
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.navLinks li a {
+  transition: all 0.3s ease 0s;
+  background-color: inherit;
+  margin-inline: 10%;
+}
+
+.navLinks li a:hover {
+  color: yellowgreen;
+}
+
+button {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  margin-inline: 10px;
+  padding: 10px;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: orange;
 }

@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nakshatra_AstronomySociety</title>
     <link rel="stylesheet" href="/styles/mainPageStyles.css" />
-</head>
-<body onload = "myPreloader()" ">
-    <div id="loading" ></div>
-    <p>
-        hello, this will be the main page
-    </p>
-    
+  </head>
+  <body onload = "myPreloader()" >
+    <!-- <div id="loading"></div> -->
+    <header>
+      <img
+        class="mainLogo"
+        src="/images/mainLogo.jpg"
+        alt="Nakshatra Main Logo"
+      />
+      <nav>
+        <ul class="navLinks">
+          <li><a href="">Our Works</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Team Nakshatra</a></li>
+          <li><a href="">Vision</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button>Contact</button></a>
+    </header>
+
     <script>
-        var preloader = document.getElementById('loading') ;
-        function myPreloader(){
-            preloader.style.display = 'none' ;
-        }
+      var preloader = document.getElementById("loading");
+      function myPreloader() {
+        preloader.style.display = "none";
+      }
     </script>
-</body>
+  </body>
 </html>
