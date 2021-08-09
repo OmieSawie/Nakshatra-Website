@@ -2,8 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: black;
-  color: white;
 }
 
 #loading {
@@ -23,60 +21,52 @@ a,
 button {
   font-size: 16px;
   font-weight: 500;
-  color: white;
+  color: lightgrey;
   text-decoration: none;
 }
 
 header {
+  --verticalPadding: 10px;
+  --horizontalPadding: 20px;
+}
+header {
   display: flex;
-  border-bottom: 10px blue solid;
+  justify-content: space-between;
   background-color: black;
+  align-items: center;
+  border-bottom: 10px blue solid;
+  padding: var(--verticalPadding) var(--horizontalPadding);
 }
 
 .mainLogo {
   cursor: pointer;
-  height: 50px;
+  max-width: 200px;
 }
 
 .navLinks {
-  position: absolute;
   list-style: none;
-  white-space: nowrap;
-  margin-inline: 10%;
-  padding-top: 20px;
-  background-color: black;
 }
 
 .navLinks li {
-  display: inline;
-  padding: 10px;
-  margin-inline: 5px 10%;
-  justify-content: center;
-  background-color: blue;
+  display: inline-block;
+  padding: 10px 20px;
   border-radius: 50px;
+  background-color: blue;
 }
 
 .navLinks li:hover {
+  background-color: blueviolet;
   border-radius: 40px;
-  padding: 20px;
+  padding: 15px 30px;
 }
 
 .navLinks li a {
   transition: all 0.3s ease 0s;
   background-color: inherit;
-  margin-inline: 10%;
-}
-
-.navLinks li a:hover {
-  color: yellowgreen;
 }
 
 button {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  margin-inline: 10px;
-  padding: 10px;
+  padding: 10px 10px;
   background-color: red;
   border: none;
   border-radius: 50px;
@@ -86,4 +76,5 @@ button {
 
 button:hover {
   background-color: orange;
+  padding: 20px 20px;
 }
